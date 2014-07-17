@@ -1,7 +1,7 @@
 /**
  * Express.java
  */
-package com.weasel.http.express;
+package com.weasel.express;
 
 import static com.weasel.http.HttpHolder.Method.GET;
 
@@ -11,8 +11,8 @@ import java.util.Map;
 
 import org.apache.commons.httpclient.HttpMethod;
 
+import com.weasel.helper.BeanMapConverter;
 import com.weasel.http.HttpHolder;
-import com.weasel.lang.helper.BeanMapConverter;
 
 /**
  * @author Dylan
@@ -22,6 +22,10 @@ public class Express {
 
 	private String url = "http://api.kuaidi100.com/api?";
 	private String key = "3b47ce87f03b5d6b";
+	
+	public Express(String _key){
+		key = _key;
+	}
 	
 	/**
 	 * 得到快递信息

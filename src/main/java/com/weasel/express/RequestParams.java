@@ -1,9 +1,9 @@
 /**
  * RequestParams.java
  */
-package com.weasel.http.express;
+package com.weasel.express;
 
-/**传递给快递100的参数
+/**传�?�给快�??100的参�?
  * @author Dylan
  * @time 2013-3-17
  */
@@ -15,42 +15,42 @@ public class RequestParams {
 	private String id;
 	
 	/**
-	 * 快递公司代码
+	 * 快�?�公司代�?
 	 */
 	private String com;
 	
 	/**
-	 * 要查询的快递单号
+	 * 要查询的快�?�单�?
 	 */
 	private String nu;
 	
 	/**
-	 * 查询快递的电话号码，目前只有佳吉物流需要这个参数，其他公司请忽略
+	 * 查询快�?�的电话号码，目前只有佳吉物流需要这个参数，其他公司请忽�?
 	 */
 	private String valicode;
 	
 	/**
-	 * 返回类型： 
+	 * 返回类型�? 
 	 * 0：返回json字符串， 
-     * 1：返回xml对象， 
-     * 2：返回html对象， 
-     * 3：返回text文本。 
-     * 如果不填，默认返回json字符串。
+     * 1：返回xml对象�? 
+     * 2：返回html对象�? 
+     * 3：返回text文本�? 
+     * 如果不填，默认返回json字符串�??
 	 */
 	private String show;
 	
 	/**
-	 * 	返回信息数量： 
+	 * 	返回信息数量�? 
 	 * 1:返回多行完整的信息， 
-	 * 0:只返回一行信息。 
-	 * 不填默认返回多行。
+	 * 0:只返回一行信息�?? 
+	 * 不填默认返回多行�?
 	 */
 	private String muti;
 	
 	/**
-	 * 排序： 
-	 * desc：按时间由新到旧排列， 
-	 * asc：按时间由旧到新排列。 
+	 * 排序�? 
+	 * desc：按时间由新到旧排列�? 
+	 * asc：按时间由旧到新排列�? 
 	 * 不填默认返回倒序（大小写不敏感）
 	 */
 	private String order;
